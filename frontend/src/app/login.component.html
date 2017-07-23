@@ -1,0 +1,11 @@
+<md-card>
+    <md-input-container>
+        <input mdInput type="email"[(ngModel)] = "loginData.email" placeholder="E-mail"/>
+    </md-input-container>
+    <br/>
+    <md-input-container>
+        <input mdInput type="password" [(ngModel)] = "loginData.password" placeholder="Password"/>
+    </md-input-container>
+    <br/>
+    <button md-raised-button color = "primary" (click)="login()">Login</button>
+</md-card>
